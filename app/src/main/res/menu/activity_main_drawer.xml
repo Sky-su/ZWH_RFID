@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_getstorage"
+            android:icon="@drawable/click1_l"
+            android:title="@string/menu_getstorage" />
+        <item
+            android:id="@+id/nav_gooutstorage"
+            android:icon="@drawable/goout"
+            android:title="@string/menu_gooutstorage" />
+        <item
+            android:id="@+id/nav_movedata"
+            android:icon="@drawable/move"
+            android:title="@string/menu_movestorage" />
+        <item
+            android:id="@+id/nav_exitstorage"
+            android:icon="@drawable/exitstorage"
+            android:title="@string/menu_Exitstorage" />
+        <item
+            android:id="@+id/nav_incheck"
+            android:icon="@drawable/incheck"
+            android:title="@string/menu_InventoryChecker" />
+        <item
+            android:id="@+id/nav_lookatstorage"
+            android:icon="@drawable/lookat"
+            android:title="@string/menu_lookatstorage" />
+        <item
+            android:id="@+id/nav_login"
+            android:icon="@drawable/login_log"
+            android:title="@string/menu_login" />
+        <item
+            android:id="@+id/nav_Seeting"
+            android:icon="@drawable/setting"
+            android:title="@string/menu_seeting" />
+
+    </group>
+</menu>

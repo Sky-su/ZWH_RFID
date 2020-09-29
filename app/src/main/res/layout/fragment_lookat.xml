@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.lookatstock.Fragment_lookat">
+    <EditText
+        android:id="@+id/editlookat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入物料名称或编号"/>
+
+    <ListView
+        android:id="@+id/listlookat"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"/>
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom">
+
+        <Button
+            android:id="@+id/buttonlookatfanhui"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            style="@style/btn_orange"
+            android:text="返回" />
+
+        <Button
+            android:id="@+id/buttonlookatOk"
+            android:layout_weight="0.3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/button_style2"
+
+            android:text="确定" />
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+</FrameLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/line_getdata1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/wzName"
+            style="@style/style_medium_font"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="物资名称："
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+        <TextView
+            android:id="@+id/dataName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/style_normal_font"
+            app:layout_constraintTop_toTopOf="@id/wzName"
+            app:layout_constraintStart_toEndOf="@+id/wzName"
+            app:layout_constraintBottom_toBottomOf="@+id/wzName" />
+
+        <TextView
+            android:id="@+id/kwName"
+            style="@style/style_medium_font"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="库位编码："
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/wzName"/>
+
+        <TextView
+            android:id="@+id/datakuweiID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/style_normal_font"
+            app:layout_constraintTop_toTopOf="@+id/kwName"
+            app:layout_constraintBottom_toBottomOf="@+id/kwName"
+            app:layout_constraintStart_toEndOf="@+id/kwName"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/getdatalay2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        app:layout_constraintTop_toBottomOf="@+id/line_getdata1">
+
+        <TextView
+            android:id="@+id/tex1"
+            style="@style/style_medium_font"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="物资编码："
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/getdata_wuzID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/style_normal_font"
+            app:layout_constraintTop_toTopOf="@+id/tex1"
+            app:layout_constraintBottom_toBottomOf="@+id/tex1"
+            app:layout_constraintStart_toEndOf="@+id/tex1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tex2"
+            style="@style/style_medium_font"
+            android:text="物资数量："
+            app:layout_constraintTop_toBottomOf="@+id/tex1"
+            app:layout_constraintStart_toStartOf="parent"/>
+        <TextView
+            android:id="@+id/getdata_wuznumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="@+id/tex2"
+            app:layout_constraintBottom_toBottomOf="@+id/tex2"
+            app:layout_constraintStart_toEndOf="@+id/tex2"/>
+       <!-- <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textrfid"
+            android:layout_marginTop="3dp"
+            style="@style/style_medium_font"
+            app:layout_constraintTop_toBottomOf="@+id/getdata_wuznumber"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            android:id="@+id/rfid_getdata"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/style_normal_font"
+            app:layout_constraintTop_toTopOf="@+id/textrfid"
+            app:layout_constraintStart_toEndOf="@+id/textrfid"
+            app:layout_constraintBottom_toBottomOf="@+id/textrfid"/>-->
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

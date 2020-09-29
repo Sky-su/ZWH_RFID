@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:apps="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.gooutstock.Fragment_goout">
+
+    <ListView
+        android:id="@+id/list_gooutstock"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="52dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        apps:layout_constraintTop_toBottomOf="@+id/lo"/>
+
+    <LinearLayout
+        android:id="@+id/lo"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        apps:layout_constraintStart_toStartOf="parent"
+        apps:layout_constraintTop_toTopOf="parent">
+        <EditText
+            android:id="@+id/edit_getstock"
+            android:layout_marginTop="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint=" 搜索出库单"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        apps:layout_constraintBottom_toBottomOf="parent">
+        <Button
+            android:id="@+id/buttongetoutfanhui"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            style="@style/btn_orange"
+            android:text="返回"/>
+        <Button
+            android:id="@+id/buttongetoutsave"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            style="@style/button_style2"
+            android:text="下一步"/>
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

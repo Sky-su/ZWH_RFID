@@ -1,0 +1,2 @@
+rootProject.name='ZWH_RFID'
+include ':app', ':RFID3Library'

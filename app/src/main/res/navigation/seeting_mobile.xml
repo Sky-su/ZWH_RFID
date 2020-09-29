@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/seeting_mobile"
+    app:startDestination="@id/fragment_seeting">
+
+    <fragment
+        android:id="@+id/fragment_seeting"
+        android:name="com.company.zwh_rfid.ui.seeting.Fragment_seeting"
+        android:label="设置"
+        tools:layout="@layout/fragment_seeting" >
+        <action
+            android:id="@+id/action_fragment_seeting_to_fragment_buletooth"
+            app:destination="@id/fragment_buletooth" />
+        <action
+            android:id="@+id/action_fragment_seeting_to_fragment_power"
+            app:destination="@id/fragment_power" />
+        <action
+            android:id="@+id/action_fragment_seeting_to_fragment_systeminfo"
+            app:destination="@id/fragment_systeminfo" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_systeminfo"
+        android:name="com.company.zwh_rfid.ui.seeting.Fragment_systeminfo"
+        android:label="电池信息"
+        tools:layout="@layout/fragment_systeminfo" />
+    <fragment
+        android:id="@+id/fragment_power"
+        android:name="com.company.zwh_rfid.ui.seeting.Fragment_power"
+        android:label="功率"
+        tools:layout="@layout/fragment_power" />
+    <fragment
+        android:id="@+id/fragment_buletooth"
+        android:name="com.company.zwh_rfid.ui.seeting.Fragment_buletooth"
+        android:label="设备连接信息"
+        tools:layout="@layout/fragment_buletooth" />
+</navigation>

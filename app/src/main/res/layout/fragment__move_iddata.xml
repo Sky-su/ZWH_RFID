@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.move.Fragment_Move_iddata">
+
+
+    <ListView
+        android:id="@+id/listMoveIDData"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="50dp"/>
+    <TextView
+        android:id="@+id/textnull"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize="36sp"
+        android:layout_gravity="center"
+        android:text="请扫描物资"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/button_F5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.4"
+            style="@style/btn_orange"
+            android:text="清除"/>
+        <Button
+            android:id="@+id/buttonMove"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            style="@style/button_style2"
+            android:text="移库"/>
+
+    </LinearLayout>
+
+</FrameLayout>

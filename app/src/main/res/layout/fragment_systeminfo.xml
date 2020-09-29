@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.seeting.Fragment_systeminfo">
+
+
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_gravity="center"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/batteryLevelText"
+        style="@style/style_green_font"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:visibility="invisible"
+        android:layout_marginTop="15dp"
+        android:layout_weight="5"
+        android:text="@string/battery_percentage_text" />
+
+    <ImageView
+        android:id="@+id/battayView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:layout_weight="75"
+        android:contentDescription="@string/battery_level_desc"
+        android:src="@drawable/battery_level" />
+
+
+    <TextView
+        android:id="@+id/batteryStatusText"
+        style="@style/style_medium_font"
+        android:layout_height="0dp"
+        android:layout_weight="20"
+        android:gravity="center_horizontal"
+        android:text="@string/battery_no_active_connection_message" />
+
+
+</LinearLayout>
+
+
+</FrameLayout>

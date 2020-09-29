@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+        android:id="@+id/textrugoout"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+            style="@style/style_medium_font"
+            android:text="库位编号："
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="23dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/text_MOvestock1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/style_normal_font"
+            app:layout_constraintBottom_toBottomOf="@+id/textrugoout"
+            app:layout_constraintStart_toEndOf="@id/textrugoout"
+            app:layout_constraintTop_toTopOf="@id/textrugoout" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

@@ -1,0 +1,71 @@
+<resources>
+    <string name="app_name">中广核RFID</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">中广核RFID</string>
+    <string name="nav_header_subtitle">欢迎使用</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">设置</string>
+    <string name="action_zsave">暂存</string>
+    <string name="action_true">确认</string>
+    <string name="action_lookat">搜索</string>
+    <!--抽屉菜单-->
+    <string name="menu_home">主界面</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_movestorage">移库</string>
+    <string name="menu_getstorage">入库</string>
+    <string name="menu_Exitstorage">退库</string>
+    <string name="menu_lookatstorage">寻找物资</string>
+    <string name="menu_InventoryChecker">盘点</string>
+    <string name="menu_gooutstorage">出库</string>
+    <string name="menu_seeting">设置</string>
+    <string name="menu_login">登录</string>
+
+
+    <string name="home_second">Home Second</string>
+    <!--登录页面-->
+    <string name="login_username">  用户名</string>
+    <string name="login_prassword">密码</string>
+    <string name="login">登录</string>
+    <!--出库校验-->
+    <string name="edittext_title">请输入申请单号</string>
+    <string name="button_find">搜索</string>
+    <string name="button_scnner">扫描条形码</string>
+    <!--入库校验-->
+    <string name="string_id">入库编号:</string>
+    <string name="string_plantid">工厂编码:</string>
+
+    <string name="dialog_text">提醒</string>
+    <string name="dialog_in_check">是否确认入库？</string>
+    <!--移库页面-->
+    <string name="move_original">原库位：</string>
+    <string name="move_huowu">物资：</string>
+    <string name="move_muoriginal">目标库位：</string>
+    <string name="move_dataId">移库单号：</string>
+
+    <!--电池页面-->
+    <string name="battery_level_desc">Icon depicting level of battery in the reader</string>
+    <string name="battery_percentage_text">0%</string>
+    <string name="battery_no_active_connection_message">状态: 没有设备连接</string>
+    <string name="cancel">取消</string>
+    <string name="checklist">盘点单</string>
+    <string name="err_title">错误</string>
+    <string name="explain">保存需要外部存储权限</string>
+    <string name="label_read_total">已读/总共</string>
+    <string name="lanbel_readlocal">当前站点：</string>
+    <string name="load">载入</string>
+    <string name="no_reader">未连接到扫码枪</string>
+    <string name="no_start">启动失败，可能在充电</string>
+    <string name="no_storage">未找到外部存储</string>
+    <string name="nothing">无据可存</string>
+    <string name="ok">确定</string>
+    <string name="retry">重试？</string>
+    <string name="save">保存</string>
+    <string name="start">开始</string>
+    <string name="stop">停止</string>
+    <string name="temperature">温度</string>
+    <string name="connecting">尝试连接到扫描枪</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

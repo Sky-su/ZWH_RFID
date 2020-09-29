@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.company.zwh_rfid.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_nav_home_to_nav_Seeting"
+            app:destination="@id/nav_Seeting" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_getstorage"
+            app:destination="@id/nav_getstorage" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_gooutstorage"
+            app:destination="@id/nav_gooutstorage" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_lookatstorage"
+            app:destination="@id/nav_lookatstorage" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_exitstorage2"
+            app:destination="@id/nav_exitstorage" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_incheck"
+            app:destination="@id/nav_incheck" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_movedata"
+            app:destination="@id/nav_movedata" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_login"
+            app:destination="@id/nav_login" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_exitstorage"
+        android:name="com.company.zwh_rfid.ui.exitstock.Fragment_exitStock"
+        android:label="@string/menu_Exitstorage"
+        tools:layout="@layout/fragment_exit_stock" >
+        <action
+            android:id="@+id/action_nav_exitstorage_to_fragmentExitdata"
+            app:destination="@id/fragmentExitdata"
+            app:enterAnim="@anim/fragment_close_enter"
+            app:exitAnim="@anim/fragment_close_enter"
+            app:popEnterAnim="@anim/fragment_open_enter"
+            app:popExitAnim="@anim/fragment_open_exit" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_InventoryChecker"
+        android:name="com.company.zwh_rfid.ui.checkstock.Fragment_check"
+        android:label="@string/menu_InventoryChecker"
+        tools:layout="@layout/fragment_check" />
+    <fragment
+        android:id="@+id/nav_gooutstorage"
+        android:name="com.company.zwh_rfid.ui.gooutstock.Fragment_goout"
+        android:label="@string/menu_gooutstorage"
+        tools:layout="@layout/fragment_goout" >
+
+        <action
+            android:id="@+id/action_nav_gooutstorage_to_nav_getoutdata"
+            app:destination="@id/nav_getoutdata" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_Seeting"
+        android:name="com.company.zwh_rfid.ui.seeting.Fragment_seeting"
+        android:label="@string/menu_seeting"
+        tools:layout="@layout/fragment_seeting" >
+        <action
+            android:id="@+id/action_nav_Seeting_to_nav_buletooth2"
+            app:destination="@id/nav_buletooth2" />
+        <action
+            android:id="@+id/action_nav_Seeting_to_nav_systeminfo2"
+            app:destination="@id/nav_systeminfo2" />
+        <action
+            android:id="@+id/action_nav_Seeting_to_nav_power2"
+            app:destination="@id/nav_power2" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_getstorage"
+        android:name="com.company.zwh_rfid.ui.getstock.Fragment_getstock"
+        android:label="@string/menu_getstorage"
+        tools:layout="@layout/fragment_getstock" >
+        <action
+            android:id="@+id/action_nav_getstorage_to_nav_home"
+            app:destination="@id/nav_home" />
+        <action
+            android:id="@+id/action_nav_getstorage_to_nav_readdataitem2"
+            app:destination="@id/nav_readdataitem" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_lookatstorage"
+        android:name="com.company.zwh_rfid.ui.lookatstock.Fragment_lookat"
+        android:label="@string/menu_lookatstorage"
+        tools:layout="@layout/fragment_lookat" />
+    <fragment
+        android:id="@+id/nav_getitemdata"
+        android:name="com.company.zwh_rfid.ui.getstock.Fragment_getitemdata"
+        android:label="入库清单"
+        tools:layout="@layout/fragment_getitemdata" />
+    <fragment
+        android:id="@+id/nav_incheck"
+        android:name="com.company.zwh_rfid.ui.checkstock.Fragment_incheck"
+        android:label="盘点"
+        tools:layout="@layout/fragment_incheck" >
+        <action
+            android:id="@+id/action_nav_incheck_to_nav_InventoryChecker"
+            app:destination="@id/nav_InventoryChecker" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_readdataitem"
+        android:name="com.company.zwh_rfid.ui.getstock.Fragment_readdataitem"
+        android:label="入库检查"
+        tools:layout="@layout/fragment_readdataitem" >
+        <action
+            android:id="@+id/action_nav_readdataitem_to_nav_getitemdata"
+            app:destination="@id/nav_getitemdata" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_systeminfo2"
+        android:name="com.company.zwh_rfid.ui.seeting.Fragment_systeminfo"
+        android:label="电池"
+        tools:layout="@layout/fragment_systeminfo" />
+    <fragment
+        android:id="@+id/nav_power2"
+        android:name="com.company.zwh_rfid.ui.seeting.Fragment_power"
+        android:label="功率"
+        tools:layout="@layout/fragment_power" />
+    <fragment
+        android:id="@+id/nav_buletooth2"
+        android:name="com.company.zwh_rfid.ui.seeting.Fragment_buletooth"
+        android:label="设备连接"
+        tools:layout="@layout/fragment_buletooth" />
+    <fragment
+        android:id="@+id/nav_getoutdata"
+        android:name="com.company.zwh_rfid.ui.gooutstock.Fragment_getoutdata"
+        android:label="出库详单"
+        tools:layout="@layout/fragment_getoutdata" />
+    <fragment
+        android:id="@+id/nav_Move_iddata"
+        android:name="com.company.zwh_rfid.ui.move.Fragment_Move_iddata"
+        android:label="移库详情"
+        tools:layout="@layout/fragment__move_iddata" />
+    <fragment
+        android:id="@+id/nav_movedata"
+        android:name="com.company.zwh_rfid.ui.move.Fragment_movedata"
+        android:label="移库"
+        tools:layout="@layout/fragment_movedata" >
+        <action
+            android:id="@+id/action_nav_movedata_to_nav_Move_iddata"
+            app:destination="@id/nav_Move_iddata"
+            app:enterAnim="@anim/fragment_open_enter" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_login"
+        android:name="com.company.zwh_rfid.ui.login.Login_Fragment"
+        android:label="登录"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_nav_login_to_nav_home"
+            app:destination="@id/nav_home"
+            app:enterAnim="@anim/fragment_open_enter" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentExitdata"
+        android:name="com.company.zwh_rfid.ui.exitstock.FragmentExitdata"
+        android:label="退库物资"
+        tools:layout="@layout/fragment_exitdata" />
+
+</navigation>
